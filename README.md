@@ -9,3 +9,5 @@ Improvements that could be made include:
 3. A magic header to identify friendly Charon instances
 
 Shellcode is handwritten and assembled with [NASM](https://www.nasm.us/) with the ```-f bin``` arguments. Shellcode has to be statically compiled and/or be able to run without calling external DLLs directly as module offsets will differ between instances. The third option is to walk the pointers from the ```TEB``` in the ```FS``` register to the location of the desired module and the function contained within. 
+
+Usage: ```acheron shell.bin```
